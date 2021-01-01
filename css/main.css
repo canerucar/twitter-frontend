@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dene {
+  color: #000;
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
