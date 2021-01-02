@@ -3,7 +3,7 @@
 @import "sass/variables";
 
 body{
-  background-color: $white;
+  background-color: $white3;
 }
 
 
@@ -12,7 +12,9 @@ body{
   font-family: $family-helvetica;
 
   &__menu{
+    position: relative;
     ul {
+      position: fixed;
       li{
         margin-bottom: 25px;
         display: flex;
@@ -80,6 +82,7 @@ body{
 
       div > button {
         transition: 300ms ;
+        background-color: white;
         &:hover{
           transform: scale(1.5)
         }
@@ -120,6 +123,7 @@ body{
           color: $blue;
           margin-top: 10px;
           font-size: 15px;
+          background-color: white;
         }
       }
     }
@@ -206,6 +210,73 @@ body{
       &--icons{
         width: 460px;
         margin-left: auto;
+      }
+    }
+  }
+
+  &__right{
+    .search{
+      input{
+        width: 350px;
+        height: 40px;
+        border-radius: 19.5px;
+        padding-left: 50px;
+        background: $white2 url(/img/search.svg) no-repeat left;
+        background-position: 10px;
+        color: $gray2;
+      }
+    }
+
+    .component{
+      height: fit-content;
+      width: 348px;
+      background-color: $white4;
+      border-radius: 15px;
+
+      &-header{
+        font-family: $family-roboto;
+        font-size: 19px;
+        font-weight: 900;
+        color: $black1;
+        border-bottom: 1px solid #E6ECF0;
+      }
+
+      &-like{
+        border: 1px solid #E6ECF0;
+        .button{
+          width: 76px;
+          height: 28px;
+          border: 1px solid #1DA1F2; 
+          border-radius: 24.5px;
+          background-color: #F5F8FA;
+          transition: 300ms all;
+
+          &:hover{
+            background-color: $blue;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .trends{
+      width: 348px;
+      height: 46px;
+      background: #F5F8FA;
+      border-radius: 15px;
+      font-family: $family-roboto;
+      font-size: 19px;
+      color: #14171A;
+      font-weight: 900;
+    }
+
+    .cookies{
+      width: 348px;
+      
+      ul{
+        li{
+          color: #6E7F8D;
+        }
       }
     }
   }

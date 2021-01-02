@@ -8,6 +8,9 @@
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
 }
+*:focus {
+  outline: 0;
+}
 
 .fsize-15 {
   font-size: 15px;
@@ -34,12 +37,18 @@
 }
 
 body {
-  background-color: #F2F2F2;
+  background-color: #fff;
 }
 
 .profile__wrapper {
   display: flex;
   font-family: "Helvetica", Helvetica, Arial, sans-serif;
+}
+.profile__wrapper__menu {
+  position: relative;
+}
+.profile__wrapper__menu ul {
+  position: fixed;
 }
 .profile__wrapper__menu ul li {
   margin-bottom: 25px;
@@ -95,6 +104,7 @@ body {
 }
 .profile__wrapper__content-header div > button {
   transition: 300ms;
+  background-color: white;
 }
 .profile__wrapper__content-header div > button:hover {
   transform: scale(1.5);
@@ -130,6 +140,7 @@ body {
   color: #1DA1F2;
   margin-top: 10px;
   font-size: 15px;
+  background-color: white;
 }
 .profile__wrapper__content-description {
   margin: 9px 0 0 16px;
@@ -193,6 +204,59 @@ body {
 .profile__wrapper__content-tweet--icons {
   width: 460px;
   margin-left: auto;
+}
+.profile__wrapper__right .search input {
+  width: 350px;
+  height: 40px;
+  border-radius: 19.5px;
+  padding-left: 50px;
+  background: #E6ECF0 url(/img/search.svg) no-repeat left;
+  background-position: 10px;
+  color: #6E7F8D;
+}
+.profile__wrapper__right .component {
+  height: fit-content;
+  width: 348px;
+  background-color: #F5F8FA;
+  border-radius: 15px;
+}
+.profile__wrapper__right .component-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  color: #14171A;
+  border-bottom: 1px solid #E6ECF0;
+}
+.profile__wrapper__right .component-like {
+  border: 1px solid #E6ECF0;
+}
+.profile__wrapper__right .component-like .button {
+  width: 76px;
+  height: 28px;
+  border: 1px solid #1DA1F2;
+  border-radius: 24.5px;
+  background-color: #F5F8FA;
+  transition: 300ms all;
+}
+.profile__wrapper__right .component-like .button:hover {
+  background-color: #1DA1F2;
+  color: white;
+}
+.profile__wrapper__right .trends {
+  width: 348px;
+  height: 46px;
+  background: #F5F8FA;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  color: #14171A;
+  font-weight: 900;
+}
+.profile__wrapper__right .cookies {
+  width: 348px;
+}
+.profile__wrapper__right .cookies ul li {
+  color: #6E7F8D;
 }
 
 /*# sourceMappingURL=main.css.map */
