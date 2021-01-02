@@ -8,8 +8,41 @@ $black : #000;
 $black1 : #14171A;
 
 $white : #F2F2F2;
+$white2: #E6ECF0;
 
 $blue :  #1DA1F2;
 
 $gray : #657786;
 $gray2 : #6E7F8D;
+$gray3 : #424447;
+
+
+
+
+
+
+
+
+.fsize-15{
+  font-size: 15px;
+}
+
+.fsize-13{
+  font-size: 13px;
+}
+
+.color-gray{
+  color: $gray;
+}
+
+.color-blue{
+  color: $blue;
+}
+
+.color-gray{
+  color: $gray3
+}
+
+.color-gray2{
+  color: $gray;
+}

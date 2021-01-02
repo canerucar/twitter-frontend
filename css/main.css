@@ -9,12 +9,37 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.fsize-15 {
+  font-size: 15px;
+}
+
+.fsize-13 {
+  font-size: 13px;
+}
+
+.color-gray {
+  color: #657786;
+}
+
+.color-blue {
+  color: #1DA1F2;
+}
+
+.color-gray {
+  color: #424447;
+}
+
+.color-gray2 {
+  color: #657786;
+}
+
 body {
   background-color: #F2F2F2;
 }
 
 .profile__wrapper {
   display: flex;
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
 }
 .profile__wrapper__menu ul li {
   margin-bottom: 25px;
@@ -61,6 +86,10 @@ body {
   background-color: #F2F2F2;
   color: #14171A;
 }
+.profile__wrapper__content {
+  border-left: 2px solid #E6ECF0;
+  border-right: 2px solid #E6ECF0;
+}
 .profile__wrapper__content-header {
   height: 50px;
 }
@@ -81,6 +110,7 @@ body {
 }
 .profile__wrapper__content-cover {
   width: 100%;
+  max-height: 263px;
 }
 .profile__wrapper__content-cover .profile img {
   border-radius: 50%;
@@ -100,6 +130,69 @@ body {
   color: #1DA1F2;
   margin-top: 10px;
   font-size: 15px;
+}
+.profile__wrapper__content-description {
+  margin: 9px 0 0 16px;
+}
+.profile__wrapper__content-description .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  color: #14171A;
+}
+.profile__wrapper__content-description .title-sub {
+  font-size: 13px;
+  font-weight: 400;
+  color: #657786;
+}
+.profile__wrapper__content-description .title-description {
+  font-size: 15px;
+  font-weight: 400;
+  color: #14171A;
+}
+.profile__wrapper__content-description .title-bio {
+  color: #1DA1F2;
+  font-weight: 400;
+}
+.profile__wrapper__content-description .title-join {
+  color: #657786;
+  font-size: 15px;
+}
+.profile__wrapper__content-description .title-followers {
+  font-size: 15px;
+}
+.profile__wrapper__content-description .title-tweets ul {
+  display: flex;
+  padding: 33px 42px 19px;
+}
+.profile__wrapper__content-description .title-tweets ul li {
+  margin-right: 55px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #657786;
+}
+.profile__wrapper__content-description .title-tweets ul li:first-child {
+  color: #1DA1F2;
+  border-bottom: 2px solid #1DA1F2;
+}
+.profile__wrapper__content-description .title-tweets ul li:last-child {
+  margin-right: 0;
+}
+.profile__wrapper__content-tweet--header span img {
+  width: 50px;
+  border-radius: 50%;
+}
+.profile__wrapper__content-tweet--image {
+  height: 100%;
+  width: 460px;
+  margin-top: 7px;
+  border: 1px solid #CCD6DD;
+  border-radius: 15px;
+  margin-left: auto;
+}
+.profile__wrapper__content-tweet--icons {
+  width: 460px;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

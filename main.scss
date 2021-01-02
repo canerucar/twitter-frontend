@@ -6,8 +6,10 @@ body{
   background-color: $white;
 }
 
+
 .profile__wrapper{
   display: flex;
+  font-family: $family-helvetica;
 
   &__menu{
     ul {
@@ -70,6 +72,9 @@ body{
 
   &__content{
 
+    border-left: 2px solid $white2;
+    border-right: 2px solid #E6ECF0;
+
     &-header{
       height: 50px;
 
@@ -94,6 +99,7 @@ body{
 
     &-cover{
       width: 100%;
+      max-height: 263px;
       .profile {
         img{
           border-radius: 50%;
@@ -118,5 +124,89 @@ body{
       }
     }
 
+    &-description{
+      margin: 9px 0 0 16px;
+
+      .title{
+        font-family: $family-roboto;
+        font-size: 19px;
+        font-weight: 900;
+        color: $black1;
+
+        &-sub{
+          font-size: 13px;
+          font-weight: 400;
+          color: $gray;
+        }
+
+        &-description{
+          font-size: 15px;
+          font-weight: 400;
+          color: $black1;
+        }
+
+        &-bio{
+          color: $blue;
+          font-weight: 400;
+        }
+
+        &-join{
+          color: $gray;
+          font-size: 15px;
+        }
+
+        &-followers{
+          font-size: 15px;
+        }
+
+        &-tweets{
+          ul{
+            display: flex;
+            padding: 33px 42px 19px;
+
+            li{
+              margin-right: 55px;
+              font-size: 15px;
+              font-weight: 700;
+              color: $gray ;
+
+              &:first-child{
+                color: $blue;
+                border-bottom: 2px solid $blue;
+              }
+
+              &:last-child{
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-tweet{
+      &--header{
+        span{
+          img{
+            width: 50px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &--image{
+        height: 100%;
+        width: 460px;
+        margin-top: 7px;
+        border: 1px solid #CCD6DD;
+        border-radius: 15px;
+        margin-left: auto;
+      }
+
+      &--icons{
+        width: 460px;
+        margin-left: auto;
+      }
+    }
   }
 }
