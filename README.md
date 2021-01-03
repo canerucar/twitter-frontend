@@ -12,6 +12,9 @@
 <code> Open with code editor or IDE </code> <br>
 <code> index.html > right click > open with live-server </code> <br>
 
+#### CSS render from SCSS
+<code> sass --watch main.scss css/main.css </code>
+
 <br> <br>
 
 <hr>
